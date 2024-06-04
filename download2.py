@@ -42,10 +42,7 @@ def save_as_markdown(title, content, date_published, category, image_urls):
     for a in soup.find_all('a', href=True):
         img_tag = a.find('img')
         if img_tag:
-            img_src = img_tag.get('src')
-            # Assuming the div is the parent of the <a> tag
-            div = a.parent
-            div.replace_with(f"![{title}]https://github.com/delphla/delphla.github.io/blob/main/{local_image_path}")    
+            a.replace_with(f"![{title}]https://github.com/delphla/delphla.github.io/blob/main/{local_image_path}")    
 
     # Write to markdown file
     with open(page_path + '.md', 'w') as f:
