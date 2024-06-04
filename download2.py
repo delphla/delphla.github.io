@@ -8,9 +8,9 @@ from bs4 import BeautifulSoup
 driver = webdriver.Firefox()
 
 # Save to markdown
-def save_as_markdown(title, content, date_published, category, image_urls):
+def save_as_markdown(title, content, date_published, category, image_urls,image_elements):
     # Define the file name using date_published and title
-    file_name = f"{date_published}_{title}"
+    file_name = f"{date_published.split()[0]}_{title}"
 
     # Check if the markdown file already exists
     if os.path.exists(os.path.join('posts', f"{file_name}.md")):
@@ -20,11 +20,10 @@ def save_as_markdown(title, content, date_published, category, image_urls):
     # Create page path 
     page_path = os.path.join('posts', file_name)
 
-    # Replace image URLs with local paths
+    # Replace image URLs with github paths# Replace image URLs with github paths
     for i, image_url in enumerate(image_urls):
         image_dir = os.path.join('static', 'img', file_name)
         local_image_path = f"../{image_dir}/image_{i}.png"
-        content = content.replace(image_url, local_image_path)
         os.makedirs(image_dir, exist_ok=True) # Create img directory
         # Open the image URL in a new tab
         driver.execute_script(f"window.open('{image_url}', '_blank');")
@@ -37,6 +36,10 @@ def save_as_markdown(title, content, date_published, category, image_urls):
         driver.close()
         # Switch back to the original tab
         driver.switch_to.window(driver.window_handles[0])
+
+    # Replace image elements in the content
+    for i, image_element in enumerate(image_elements):
+        content = content.replace(image_element, f"![{title}]https://github.com/delphla/delphla.github.io/blob/main/{local_image_path}")
 
     # Write to markdown file
     with open(page_path + '.md', 'w') as f:
@@ -72,8 +75,9 @@ while True:
         category = "Uncategorized"
     date_published = driver.find_element(By.CSS_SELECTOR, ".time").text.strip('()')  # Remove parentheses
    
+
     # Define the file name using date_published and title
-    file_name = f"{date_published}_{title}"
+    file_name = f"{date_published.split()[0]}_{title}"
 
     # Check if the markdown file already exists
     if os.path.exists(os.path.join('posts', f"{file_name}.md")):
@@ -81,7 +85,9 @@ while True:
     else:
         content = driver.find_element(By.CSS_SELECTOR, ".articalContent").get_attribute("outerHTML")
         image_urls = [a['href'] for a in BeautifulSoup(content, 'html.parser').find_all('a', href=True) if a.find('img')]
-        save_as_markdown(title, content, date_published, category, image_urls)
+        image_elements = [str(a) for a in BeautifulSoup(content, 'html.parser').find_all('a', href=True) if a.find('img')]
+
+        save_as_markdown(title, content, date_published, category, image_urls,image_elements)
 
     # Navigate to prev post
     prev_button = driver.find_element(By.CSS_SELECTOR, ".articalfrontback > div:first-child a")
