@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 driver = webdriver.Firefox()
 
 # Save to markdown
-def save_as_markdown(title, content, date_published, category, image_urls,image_elements):
+def save_as_markdown(title, content, date_published, category, image_urls):
     # Define the file name using date_published and title
     file_name = f"{date_published.split()[0]}_{title}"
 
@@ -37,9 +37,15 @@ def save_as_markdown(title, content, date_published, category, image_urls,image_
         # Switch back to the original tab
         driver.switch_to.window(driver.window_handles[0])
 
-    # Replace image elements in the content
-    for i, image_element in enumerate(image_elements):
-        content = content.replace(image_element, f"![{title}]https://github.com/delphla/delphla.github.io/blob/main/{local_image_path}")
+    # Replace image div elements in content with image URLs
+    soup = BeautifulSoup(content, 'html.parser')
+    for a in soup.find_all('a', href=True):
+        img_tag = a.find('img')
+        if img_tag:
+            img_src = img_tag.get('src')
+            # Assuming the div is the parent of the <a> tag
+            div = a.parent
+            div.replace_with(f"![{title}]https://github.com/delphla/delphla.github.io/blob/main/{local_image_path}")    
 
     # Write to markdown file
     with open(page_path + '.md', 'w') as f:
@@ -85,9 +91,8 @@ while True:
     else:
         content = driver.find_element(By.CSS_SELECTOR, ".articalContent").get_attribute("outerHTML")
         image_urls = [a['href'] for a in BeautifulSoup(content, 'html.parser').find_all('a', href=True) if a.find('img')]
-        image_elements = [str(a) for a in BeautifulSoup(content, 'html.parser').find_all('a', href=True) if a.find('img')]
 
-        save_as_markdown(title, content, date_published, category, image_urls,image_elements)
+        save_as_markdown(title, content, date_published, category, image_urls)
 
     # Navigate to prev post
     prev_button = driver.find_element(By.CSS_SELECTOR, ".articalfrontback > div:first-child a")
