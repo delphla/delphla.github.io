@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Reading Town on 演示站点</title>
+        <title>Reading Town on Example Site</title>
         <link>http://localhost:1313/tags/reading-town/</link>
-        <description>Recent content in Reading Town on 演示站点</description>
+        <description>Recent content in Reading Town on Example Site</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>Freya</copyright>
+        <language>en</language>
+        <copyright>Example Person</copyright>
         <lastBuildDate>Wed, 10 Aug 2022 00:38:40 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/reading-town/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>2022.SUMMER</title>
         <link>http://localhost:1313/p/2022.summer/</link>
@@ -418,7 +418,7 @@ Reading Town started&lt;br&gt;
         <item>
         <title>2015.3.27  Reading Town Report</title>
         <link>http://localhost:1313/p/2015.3.27-reading-town-report/</link>
-        <pubDate>Mon, 30 Nov 2015 15:52:48 +0000</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/2015.3.27-reading-town-report/</guid>
         <description>&lt;img src="http://localhost:1313/p/2015.3.27-reading-town-report/image_0.png" alt="Featured image of post 2015.3.27  Reading Town Report" /&gt;&lt;p&gt;RT，虽然考到二年级水平，但考虑到刚来半年不到，1C开始读。&lt;/p&gt;
