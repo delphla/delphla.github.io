@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="学了这么多期《论语》之后，底层代码渐渐丰富起来，今天整理了一下，分为以下几类。 1. 关于品德，本分： 1）德与智的关系；2）本立而道生 ， 天下大事必作于细；3）根本vs从属；4）本分vs僭越；权利...">
+<title>论语2：为政</title>
+
+<link rel='canonical' href='http://localhost:1313/p/%E8%AE%BA%E8%AF%AD2%E4%B8%BA%E6%94%BF/'>
+
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="论语2：为政">
+<meta property='og:description' content="学了这么多期《论语》之后，底层代码渐渐丰富起来，今天整理了一下，分为以下几类。 1. 关于品德，本分： 1）德与智的关系；2）本立而道生 ， 天下大事必作于细；3）根本vs从属；4）本分vs僭越；权利...">
+<meta property='og:url' content='http://localhost:1313/p/%E8%AE%BA%E8%AF%AD2%E4%B8%BA%E6%94%BF/'>
+<meta property='og:site_name' content='Example Site'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2018-04-18T00:38:00&#43;00:00'/><meta property='article:modified_time' content='2018-04-18T00:38:00&#43;00:00'/>
+<meta name="twitter:title" content="论语2：为政">
+<meta name="twitter:description" content="学了这么多期《论语》之后，底层代码渐渐丰富起来，今天整理了一下，分为以下几类。 1. 关于品德，本分： 1）德与智的关系；2）本立而道生 ， 天下大事必作于细；3）根本vs从属；4）本分vs僭越；权利...">
+  
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu8aed37eabf56d92fedc67d960614d9b7_49151_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Example Site</a></h1>
+            <h2 class="site-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="http://localhost:1313/" selected>English</option>
+                                
+                                    <option value="http://localhost:1313/zh-cn/" >中文</option>
+                                
+                                    <option value="http://localhost:1313/ar/" >عربي</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%A4%A7%E8%AF%AD%E6%96%87/" >
+                大语文
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E8%AE%BA%E8%AF%AD2%E4%B8%BA%E6%94%BF/">论语2：为政</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            学了这么多期《论语》之后，底层代码渐渐丰富起来，今天整理了一下，分为以下几类。 1. 关于品德，本分： 1）德与智的关系；2）本立而道生 ， 天下大事必作于细；3）根本vs从属；4）本分vs僭越；权利...
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 18, 2018</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>学了这么多期《论语》之后，底层代码渐渐丰富起来，今天整理了一下，分为以下几类。</p>
+<p>1. 关于品德，本分：</p>
+<p>1）德与智的关系；2）本立而道生 ， 天下大事必作于细；3）根本vs从属；4）本分vs僭越；权利与义务；</p>
+<p>2. 关于君子/小人，信仰和格局：</p>
+<p>1）小格局vs大抱负；2）有信仰；3）道义vs私利；4）君子之争vs小人之争；5）亲君子，远小人；6）精神vs物质</p>
+<p>3. 关于学习方法：</p>
+<p>1）走心vs走形式；2）问题导向；3）知识与思维的关系；4）厚重vs虚浮；5）W思维；6）不走弯路就是捷径；7）知识与应用；8）分类讨论vs一概而论</p>
+<p>4. 外和内，环境与自我的关系：</p>
+<p>1）环境和自我；2）环境和成长；3）自省和盲从；4）嫉妒vs学习；5）判断力；6)外部评价vs自我评价</p>
+<p>5. 策略，弹性，度</p>
+<p>1）原则和底线；3）弹性思维；3）节制vs放纵；4）过犹不及；4）排挤效应；5）主要和次要</p>
+<p>6. 做事（主要是指从政）方法：</p>
+<p>1)正直vs谄媚； 2）真诚vs虚伪，内容vs形式；3）表面与实质；4）做事vs做人；5）勇气vs怯懦；6）空谈vs实干</p>
+<p>7. 教育方法：</p>
+<p>1）惩罚vs教化；2）意志vs原则；3）宽容vs苛责，抓大放小；4）多元评价</p>
+<p>论语2：为政</p>
+<p><strong>1</strong> 子曰：「为政以德，譬如北辰居其所而众星共之。」</p>
+<p>认识VS.认可</p>
+<p>赢得别人的认可。让人欣赏，敬佩。大家就会聚拢在你这里。</p>
+<p>2、<strong>子曰：「诗三百，一言以蔽之，曰：【思无邪】。」</strong></p>
+<p>一言以蔽之，是一个成语。</p>
+<p>思无邪，就是思想纯正。与这个对应的什么？虚伪，包装、不真诚、歪门邪道、杂念思想。</p>
+<p>真诚VS虚伪的角度来解读。孔子特别强调真诚。</p>
+<p><strong>3</strong>**、** 子曰：「道之以政，齐之以刑，民免而无耻；道之以德，齐之以礼，有耻且格。」</p>
+<p>法家讲究刑法，儒家讲道德。惩罚vs感化</p>
+<p>这个底层代码的运用十分广泛。比如南风VS北风。。暴政VS仁政也是。</p>
+<p>这里面有什么隐含的弊病？内疚感过强、缺乏对自我的肯定、奴化、礼教杀人、压抑个性</p>
+<p>儒家这个礼教，有时候会杀人。</p>
+<p>就是利用这个羞愧感。对，压抑个性。这里底层代码就是 道德VS个性。</p>
+<p>过于讲道德，被各种条条框框束缚，容易压抑个性。比如三从四德这些。</p>
+<p>4、<strong>子曰：「吾十有五而志于学，三十而立，四十而不惑，五十而知天命，六十而耳顺，七十而从心所欲，不逾矩。」</strong></p>
+<p>孔子把人生各个阶段，在哲学认知上的特点逐一高度概括了。让人很有共鸣。</p>
+<p>5、孟懿子问孝。子曰：「无违。」</p>
+<p>礼制、父命、礼节,这里是有底层代码的。。就是：意志VS原则</p>
+<p>对于父母的意志，可以违背。但不能违背原则。</p>
+<p>孝，不是对父母言听计从。什么都完全听。也不是什么也不听。听的是原则。</p>
+<p>家庭教育，最好用原则代替意志。</p>
+<p>6、孟武伯问孝。子曰：「父母唯其疾之忧。」</p>
+<p>孔子说“做父母的一心为儿女的疾病担忧。”这句看起来有点不通。补充全了，就通了。</p>
+<p>孝，就是孩子，能够用父母对待自己的方式对待父母。</p>
+<p>父母爱自己——生病了特别着急。孩子，也要这样爱父母。这样就是孝了。</p>
+<p>这里的底层代码，可以是将心比心。。同理心，换位思考。</p>
+<p>7、子游问孝。子曰：「今之孝者，是谓能养。至於犬马，皆能有养；不敬，何以别乎。」</p>
+<p>光奉养父母这还不够。还要有敬。。</p>
+<p>底层代码:内在情感VS外在形式、精神VS物质、尽孝VS尽责、真诚VS虚伪</p>
+<p>形式VS内容。</p>
+<p>走心vs走形式-&mdash;&ndash;走心，就是敬。。发自内心的爱父母。</p>
+<p>走形式，心中无敬，但出于舆论压力，道德压力，给父母一口饭吃。。</p>
+<p>走心vs走形式。。这个说法，比内容vs形式更精细了一些。</p>
+<p>走心VS走脑，不是讲的态度。是讲是一种学习方法。</p>
+<p>走心VS走形式，这个是态度问题。这个底层代码很常用。需要牢记。</p>
+<p>8、子夏问孝。子曰：「色难。有事，弟子服其劳；有酒食，先生馔，曾是以为孝乎？」</p>
+<p>色难：态度好很难。底层代码:也是走心VS走形式。</p>
+<p>色难，就是不敬。不是发自内心的。虽然也在做事情，给老人好吃好喝，但态度不敬。</p>
+<p>走心与走形式。。走心vs敷衍。。都可以。</p>
+<p><strong>9</strong>**、** 子曰：「吾与回言终日，不违，如愚。退而省其私，亦足以发，回也不愚。」</p>
+<p>孔子说“我和颜回谈论一整天，他从不提反对意贝和疑问， 就像一个愚笨的人。可是，我注意观察他课后的情况、却发现他很能发挥我所讲的内容，颜回并不愚笨啊。”</p>
+<p>确实是W思维。。当时是2013年的时候，我们第一次讲绘本课。课上，我说一句，然后下面乱成一团。各说各的。后来我突然就想到了卢梭《忏悔录》的一段话。就是讲，他自己学问大增，就是开始不抱着评论的态度，就吸收。前提是对着真正的经典。</p>
+<p>所以学习的一个好方法，就是跟着高人或者经典，带着W思维，努力去吸收。不要一开始，自己带着各种想法。吸收之后呢？然后可以举一反三。。触类旁通。。</p>
+<p><strong>上面讲了<strong><strong>9</strong></strong>条。其中关于孝的好几条。</strong></p>
+<p>孔子从不同角度，谈了什么是真正的孝。孝不是唯命是从。但要坚持礼，坚持原则。</p>
+<p>孝要走心，不要走形式。表面上的孝，不是真正的孝。这些思想都很辩证。论语确实是哲学书。</p>
+<p>2-10**、** 子曰：视其所以，观其所由，察其所安。人焉叟哉？人焉叟哉？</p>
+<p>所以，所由，所安，基本一个意思。看一个人要看透。他的动机，他跟朋友如何，对家人如何等等。有句话说，看一个人的人品，看看他跟什么样的人交朋友就够了，或者看看他如何对待老人就可以了。（叟，就是藏）看透了，他就不好掩藏自己的本性了。</p>
+<p>底层代码：表象vs本质 要透过表象看本质。</p>
+<p>2-11、子曰：温故而知新，可以为师矣。</p>
+<p>底层代码：高级思维，判断能力（通过历史，能够预测、判断未来这种能力。）</p>
+<p>2-12、子曰：君子不器。</p>
+<p>这个器，有点小格局的意思。所从事的是一些具体的事情。工匠、专业人士等等。</p>
+<p>孔子觉得这种能力低端了一些。他看重宏观的能力，大格局，治国安邦。</p>
+<p>2-13、子贡问君子，子曰：“先行，其言而后从之。”</p>
+<p>贡问怎样才能做一个君子。孔子说“行动在先，说话在后。”</p>
+<p>这个底层代码是什么？  空谈vs实干</p>
+<p>孔子特别重视行动，已经几次提到行动的重要了。他对于空谈，巧言令色这些很警惕。</p>
+<p>2-14、<strong>子曰：君子周而不比，小人比而不周。</strong></p>
+<p>孔子说：“君子团结人而不拉帮结派，小人拉帮结派而不团结人。”</p>
+<p>团结人，跟拉帮结派，这个怎么区分？用什么标准来区分？</p>
+<p>底层代码：道义VS私利 —— 团结人是出于道义，大家出于共同的目标走在一起。梁山好汉。拉帮结派是小圈子，为了私利，互相勾结和利用。</p>
+<p>2-15、<strong>子曰：学而不思则罔，思而不学则殆。</strong></p>
+<p>孔子说：“只读书不思考就会迷惘，只空想不读书那就危险了”。</p>
+<p>底层代码:走脑VS走心（读书，就是走脑，思考，是走心），空想VS实干（思而不学）</p>
+<p>2-17、子曰：由！诲女知之乎！<strong>知之为知之，不知为不知，是知也。</strong></p>
+<p>孔子说：“仲由，我教你的东西你都懂得了吗？懂得了就是懂得了，没有懂就是没有懂，这才是真懂。”</p>
+<p>底层代码：真懂VS假懂 、实事求是、W思维</p>
+<p>形式与内容，这是中性的。 W思维与IT思维，这也是带褒贬的。</p>
+<p>这个如果改成中性：吸收与质疑 或者 倾听与评论</p>
+<p><strong>2-21</strong>**、或谓孔子曰：「子奚不为政？」子曰：「书云：『孝乎惟孝，友于兄弟，施於有政。』是亦为政，奚其为为政？」**</p>
+<p>孔子说：“《尚书》说：‘孝呀，孝顺父母，友爱兄弟，把这种风气影响到政治上去。’这也就是参与政治了呀，为什么一定要做官才算参与政治呢？”</p>
+<p>这句底层代码是什么？也是标准的本立而道生。身边事与大目标。</p>
+<p><strong>2-24</strong>**、** 子曰：「非其鬼而祭之，谄也。见义不为，无勇也。」</p>
+<p>孔子说：“不是自己的祖先却去祭祀，这是谄媚；遇见正义的事却不挺身而出，这是怯懦。”</p>
+<p>底层代码：正直vs谄媚 勇气vs怯懦，隐含的，君子vs小人。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/%E5%B9%B3%E5%93%A5%E4%B8%AD%E6%96%87%E8%AF%BB%E5%90%8E%E6%84%9F%E9%92%B1%E9%92%9F%E4%B9%A6%E7%9A%84%E8%AE%BA%E5%BF%AB%E4%B9%90%E6%A2%81%E5%AE%9E%E7%A7%8B%E7%A9%B7/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">平哥中文读后感：钱钟书的《论快乐》梁实秋《穷》</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E5%B9%B3%E5%93%A5%E5%AD%A6%E4%B9%A0%E9%92%B1%E9%92%9F%E4%B9%A6%E8%AF%BB%E4%BC%8A%E7%B4%A2%E5%AF%93%E8%A8%80%E9%83%9D%E6%99%AF%E8%8A%B3%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%8B%87%E6%95%A2%E7%9A%84%E4%BA%BA/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">平哥学习：钱钟书《读伊索寓言》郝景芳的《最后一个勇敢的人》</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E4%B8%AD%E6%96%87%E8%AF%BB%E5%90%8E%E6%84%9F%E9%97%AA%E5%85%89%E7%9A%84%E7%94%9F%E5%91%BD%E4%B8%80%E5%8F%AA%E7%89%B9%E7%AB%8B%E7%8B%AC%E8%A1%8C%E7%9A%84%E7%8C%AA%E6%88%91%E5%92%8C%E6%A9%98%E7%9A%AE%E7%9A%84%E5%BE%80%E4%BA%8B/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">中文读后感：《闪光的生命》《一只特立独行的猪》《我和橘皮的往事》</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E5%B9%B3%E5%93%A5%E4%B8%AD%E6%96%87%E8%AF%BB%E5%90%8E%E6%84%9F%E8%8E%AB%E8%A8%80%E5%86%99%E7%9A%84%E5%8D%96%E7%99%BD%E8%8F%9C%E5%9B%A0%E4%B8%BA%E5%AD%A9%E5%AD%90/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">平哥中文读后感：莫言写的《卖白菜》《因为孩子》</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E5%B9%B3%E5%93%A5%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0%E4%BD%9C%E5%AE%B6/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">平哥中文笔记：作家</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2024 Example Person
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
