@@ -3,7 +3,7 @@
 date: 2021-02-24 04:31:23
 categories:
     - 暖暖写作空间-writing
-title: PrideandPrejudice
+title: Pride and Prejudice
 description: "Pride and Prejudice ** ** The Bennet family had five sisters, all with their own charm. Mrs. Bennet ..."
 ---
 
