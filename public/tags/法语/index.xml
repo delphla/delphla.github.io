@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>法语 on Example Site</title>
+        <title>法语 on 心暖</title>
         <link>http://localhost:1313/tags/%E6%B3%95%E8%AF%AD/</link>
-        <description>Recent content in 法语 on Example Site</description>
+        <description>Recent content in 法语 on 心暖</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <copyright>Example Person</copyright>
+        <language>zh-cn</language>
+        <copyright>心暖</copyright>
         <lastBuildDate>Fri, 14 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%B3%95%E8%AF%AD/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>DELF-A2-Report-May2019</title>
         <link>http://localhost:1313/p/delf-a2-report-may2019/</link>

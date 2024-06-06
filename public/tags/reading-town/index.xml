@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Reading Town on Example Site</title>
+        <title>Reading Town on 心暖</title>
         <link>http://localhost:1313/tags/reading-town/</link>
-        <description>Recent content in Reading Town on Example Site</description>
+        <description>Recent content in Reading Town on 心暖</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <copyright>Example Person</copyright>
+        <language>zh-cn</language>
+        <copyright>心暖</copyright>
         <lastBuildDate>Wed, 10 Aug 2022 00:38:40 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/reading-town/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>2022.SUMMER</title>
         <link>http://localhost:1313/p/2022.summer/</link>

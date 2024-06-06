@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>暖暖的写意生活-Life on Example Site</title>
+        <title>暖暖的写意生活-Life on 心暖</title>
         <link>http://localhost:1313/categories/%E6%9A%96%E6%9A%96%E7%9A%84%E5%86%99%E6%84%8F%E7%94%9F%E6%B4%BB-life/</link>
-        <description>Recent content in 暖暖的写意生活-Life on Example Site</description>
+        <description>Recent content in 暖暖的写意生活-Life on 心暖</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <copyright>Example Person</copyright>
+        <language>zh-cn</language>
+        <copyright>心暖</copyright>
         <lastBuildDate>Sat, 08 Apr 2023 01:31:59 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%9A%96%E6%9A%96%E7%9A%84%E5%86%99%E6%84%8F%E7%94%9F%E6%B4%BB-life/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>2023.4八年级学校生活</title>
         <link>http://localhost:1313/p/2023.4%E5%85%AB%E5%B9%B4%E7%BA%A7%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/</link>
