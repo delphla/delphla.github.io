@@ -65,7 +65,7 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: true
+        enabled: false
         provider: disqus
 
         disqusjs:
@@ -197,18 +197,18 @@ params:
 menu:
     main: []
 
-    social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
-          params:
-              icon: brand-github
+    # social:
+    #     - identifier: github
+    #       name: GitHub
+    #       url: https://github.com/CaiJimmy/hugo-theme-stack
+    #       params:
+    #           icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-              icon: brand-twitter
+    #     - identifier: twitter
+    #       name: Twitter
+    #       url: https://twitter.com
+    #       params:
+    #           icon: brand-twitter
 
 related:
     includeNewer: true
