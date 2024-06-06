@@ -1,6 +1,6 @@
 ---
 
-date: (2015-11-30 14:23:20)
+date: 2015-11-30 14:23:20
 categories:
     - 暖暖写作空间-writing
 title: 六岁一个月：The Little Dog
