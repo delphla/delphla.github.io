@@ -5,7 +5,7 @@ categories:
     - 暖暖的写意生活-life
 title: 2018.12--2019.1四年级寒假生活
 description: "小暖12.26—12.30 ， 报了个四天演讲辩论班 除了要写一篇ARGUE的文章，还要拿一样东西去做PRESENTATION，只听她自言自语说：我拿什么好呢？拿钱去吧，这是我每天最需要的东西。最需要..."
-image: image_0.png
+image: image_2.png
 ---
 
 ![](image_0.png)
